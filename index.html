@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <main>
+        <div class="logo">
+            <img src="./imgs/Logo.svg" alt="">
+        </div>
+        <div class="encrypt">
+            <div class="container-encrypt">
+                <textarea id="txtEncrypt" type="text" placeholder="Ingrese el texto aquí"></textarea>
+                <p id="warningMsg"><i class="bi bi-info-circle-fill"></i> Sólo letras minúsculas y sin acentos</p>
+                <div class="container-buttons">
+                    <button id="btnEncrypt">Encriptar</button>
+                    <button id="btnDecrypt">Desencriptar</button>
+                </div>
+            </div>            
+        </div>
+        <div class="text-encrypted">
+            <div id="first-text-encrypted">
+                <img src="./imgs/Muñeco.svg" alt="">
+                <p class="txtMessage" style="font-weight: bold;">Ningún mensaje fue encontrado</p>
+                <p class="txtMessage">Ingrese el texto que desea encriptar o desencriptar</p>
+            </div>
+            <div id="second-text-encrypted">
+                <p id="txtEncrypted"></p>
+                <button id="btnCopy">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

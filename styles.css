@@ -1,0 +1,119 @@
+* {
+    font-family: 'Inter';
+}
+
+body {
+    background-color: #F3F5FC;    
+    margin: 0;
+    padding: 20px;
+}
+
+.logo {
+    display: inline-block;
+    height: 100vh;
+    width: 15%;
+    vertical-align: top;
+}
+
+.encrypt {
+    display: inline-block;
+    height: 100vh;
+    width: 60%;
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+.container-encrypt {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+textarea {
+    background-color: transparent;
+    border: none;
+    width: calc(100% - 5px);
+    height: 70%;
+    outline: none;
+    overflow: hidden;
+    resize: none;
+    font-size: 22px;
+    color: #0A3871;
+    margin-bottom: 150px;
+}
+
+textarea::placeholder {
+    color: #0A3871;
+}
+
+.container-encrypt p {
+    font-size: 14px;
+    color: #495057;
+}
+
+button {
+    padding: 15px 120px;
+    border: 1px solid #0A3871;
+    background-color: #0A3871;
+    color: white;
+    border-radius: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+button:nth-child(2) {
+    background-color: white;
+    color: #0A3871;
+    font-weight: bold;
+}
+
+button:active {
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+
+button:nth-child(2):active {
+    box-shadow: inset 0px 0px 5px #0A3871;
+}
+
+.text-encrypted {
+    background-color: white;
+    float: right;
+    height: 100vh;
+    width: 20%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 32px;
+}
+
+#first-text-encrypted {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+#first-text-encrypted img {
+    width: 100%;
+}
+
+.txtMessage {
+    text-align: center;
+    color: #343A40;
+    font-size: 18;
+}
+
+
+#second-text-encrypted {
+    display: none;
+    font-size: 18px;
+    position: relative;
+    height: 100%;
+}
+
+#second-text-encrypted button {
+    position: absolute;
+    padding: 15px;
+    width: 100%;
+    bottom: 20px;
+}
