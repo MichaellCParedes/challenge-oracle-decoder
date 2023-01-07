@@ -39,8 +39,8 @@ btnDecrypt.onclick = function(){
     displayTxtEncrypted(textDisplay);
 }
 
-btnCopy.onclick = function(){    
-    navigator.clipboard.writeText(textEncrypted.value);
+btnCopy.onclick = function(){
+    navigator.clipboard.writeText(textEncrypted.innerHTML);
     alert("Se ha copiado el texto correctamente");
 }
 
